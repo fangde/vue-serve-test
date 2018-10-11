@@ -3,6 +3,8 @@
 import GPU from 'gpu.js';
 
 
+
+
 const gpu=new GPU();
 
 
@@ -19,4 +21,4 @@ function test2(name){
 
 
 export default test ;
-export {test2,gpu}
+export {test2,gpu};

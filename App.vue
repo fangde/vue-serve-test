@@ -7,9 +7,13 @@
         <h2>
             {{ baidu }}
         </h2>
-        <canvas id='image'>
+        <canvas ref='image'>
 
+        
         </canvas>
+
+        <img ref='source_img' src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+
          <button ref='testbtn' @click='showImage'>ImageShow</button>
     </div>
 
@@ -28,15 +32,22 @@ export default {
        return { 
            what:  test('what'),
            baidu: test2('hello'),
+           images: ["http://pic1.win4000.com/pic/c/0a/14c4480667.jpg",
+            'http://img05.tooopen.com/images/20150330/tooopen_sy_83867387932.jpg'
+
+           ]
           
        };
     },
     methods:{
         showImage(){
-
+            
+    
             console.log('clicked')
             console.log(this.$refs.testbtn)
             this.$refs.testbtn.innerText="waht"
+            console.log(this.$refs.image)
+            this.$refs.source_img.src="pic_trulli.jpg"
 
         }
     }
@@ -45,7 +56,7 @@ export default {
 </script>
 
 <style scoped>
-#image {
+canvas {
     width: 800px;
     height:600px;
 
