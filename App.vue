@@ -10,7 +10,7 @@
         <canvas id='image'>
 
         </canvas>
-         <button ref='mytestbar' @click='showImage'>ImageShow</button>
+         <button ref='testbtn' @click='showImage'>ImageShow</button>
     </div>
 
    
@@ -35,6 +35,8 @@ export default {
         showImage(){
 
             console.log('clicked')
+            console.log(this.$refs.testbtn)
+            this.$refs.testbtn.innerText="waht"
 
         }
     }
