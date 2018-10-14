@@ -6,3 +6,5 @@ export default function loadimages(ctx){
     img.onload=()=>ctx.drawImage(img,0,0);
 
 }
+
+
