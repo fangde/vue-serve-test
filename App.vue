@@ -39,6 +39,8 @@ export default {
       this.$refs.testbtn.innerText = "waht";
       console.log(this.$refs.image);
       this.$refs.source_img.src = "./im1.jpg";
+
+     console.log(process.env.VUE_APP_HELLO);
     },
     loadImage() {
       function load(counter) {
